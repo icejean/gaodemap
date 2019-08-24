@@ -7,6 +7,16 @@ R interface of gaode map api，just like ggmap but get map from gaode api instea
 ```
 library(devtools)
 install_github('icejean/gaodemap')
+
+If you get as message like this:
+Downloading GitHub repo icejean/gaodemap@master
+Error in utils::download.file(url, path, method = download_method(), quiet = quiet,  : 
+  cannot open URL 'https://api.github.com/repos/icejean/gaodemap/tarball/master'
+  
+Just copy and paste the URL to browser and download the ziped source file,
+icejean-gaodemap-8de1771.tar.gz, for exmaple,and install it from source:
+install.packages("D:/R/Rsources/icejean-gaodemap-8de1771.tar.gz",repos = NULL,type="source",INSTALL_opts = "--no-multiarch")
+
 ```
 
 ## Usage
@@ -32,7 +42,7 @@ location_xml = getLocation(lon[1, ], output='xml')
 location = getLocation(lon, formatted = T) 
 ```
 
-### Function: GetCoordinate
+### Function: getCoordinate
 Given a address, return the corresponding coordinates
 ```
 getCoordinate('北京大学') # json
