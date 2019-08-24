@@ -1,20 +1,20 @@
 gaodemap
 ========
 
-R interface of baidu map api，just like ggmap but get map from baidu api instead of google or openstreet.
+R interface of gaode map api，just like ggmap but get map from gaode api instead of google or openstreet.
 
 ## Installation
 ```
 library(devtools)
-install_github('badbye/gaodemap')
+install_github('icejean/gaodemap')
 ```
 
 ## Usage
 
-Apply an application from [lbsyun.baidu.com](http://lbsyun.baidu.com/apiconsole/key). Then register you key here.
+Apply an application from [lbs.amap.com](https://lbs.amap.com/api/webservice/guide/create-project/get-key). Then register you key here.
 ```
 library(gaodemap)
-options(gaode.key = 'XXX fill your key here XXX')
+options(gaode.key = 'fill your key here XXX')
 ```
 
 
@@ -29,7 +29,7 @@ location_json = getLocation(lon[1,], output='json')
 location_xml = getLocation(lon[1, ], output='xml')
 
 ## formatted
-location = getLocation(lon[1, ], formatted = T) 
+location = getLocation(lon, formatted = T) 
 ```
 
 ### Function: GetCoordinate
@@ -52,7 +52,7 @@ ggmap(p)
 
 ### Function: geoconv
 
-Convert your coordinate data to gaodemap's coordinate system. Document: http://lbsyun.baidu.com/index.php?title=webapi/guide/changeposition
+Convert your coordinate data to gaodemap's coordinate system. Document: https://lbs.amap.com/api/webservice/guide/api/convert
 
 ## Example
 
