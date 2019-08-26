@@ -47,4 +47,6 @@ install_github('icejean/gaodemap')
 #   Downloading GitHub repo icejean/gaodemap@master
 # Error in utils::download.file(url, path, method = download_method(), quiet = quiet,  : 
 #                                 cannot open URL 'https://api.github.com/repos/icejean/gaodemap/tarball/master'
+# Just copy and paste the URL to the browser and download the ziped source file,
+# icejean-gaodemap-8de1771.tar.gz, for exmaple,and install it from source:
 install.packages("D:/R/Rsources/icejean-gaodemap-8de1771.tar.gz",repos = NULL,type="source",INSTALL_opts = "--no-multiarch")
