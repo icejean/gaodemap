@@ -8,12 +8,12 @@ R interface of gaode map api，just like ggmap but get map from gaode api instea
 library(devtools)
 install_github('icejean/gaodemap')
 
-If you get as message like this:
+If you get a message like this:
 Downloading GitHub repo icejean/gaodemap@master
 Error in utils::download.file(url, path, method = download_method(), quiet = quiet,  : 
   cannot open URL 'https://api.github.com/repos/icejean/gaodemap/tarball/master'
   
-Just copy and paste the URL to browser and download the ziped source file,
+Just copy and paste the URL to the browser and download the ziped source file,
 icejean-gaodemap-8de1771.tar.gz, for exmaple,and install it from source:
 install.packages("D:/R/Rsources/icejean-gaodemap-8de1771.tar.gz",repos = NULL,type="source",INSTALL_opts = "--no-multiarch")
 
@@ -76,3 +76,5 @@ ruc_coordinate = data.frame(t(ruc_coordinate))
 ggmap::ggmap(ruc_map) +
   geom_point(aes(x=longtitude, y=latitude), data=ruc_coordinate, col='red', size=5)
 ```
+There's a full example R script in the ./test directory showing the usage of all 8 functions.
+Please read it for detail.
